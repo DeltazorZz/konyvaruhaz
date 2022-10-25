@@ -14,7 +14,7 @@ class KonyvView {
                          </tr>`);
 
 this.sorElem = szuloElem.children("tr:last-child");
-console.log(this.sorElem);
+//console.log(this.sorElem);
 this.modositElem = $(`#mod${elem.id}`);
 this.torolElem = $(`#del${elem.id}`);
 
@@ -30,7 +30,7 @@ this.torolElem.on("click", ()=>{
   
 }
 KattintasTrigger(esemenynev){
-    console.log("triggerben", esemenynev );
+   //console.log("triggerben", esemenynev, this.#elem.id, this.#elem.cim, this.#elem.ar);
     const esemeny = new CustomEvent(esemenynev, {detail:this.#elem.id})
     window.dispatchEvent(esemeny);
   

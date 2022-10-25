@@ -2,7 +2,7 @@ class KonyvModel {
     #konyvekTomb = [];
 
     constructor() {
-        console.log("KonyvModel");
+        //console.log("KonyvModel");
     }
 
 
@@ -12,10 +12,6 @@ class KonyvModel {
     adatTorol(adat){
         console.log("model torol", adat);
     }
-    adatKosarba(adat){
-        console.log("model Kosár", adat);
-    }
-
 
     adatBe(vegpont, myCallBack) {
         fetch(vegpont, {

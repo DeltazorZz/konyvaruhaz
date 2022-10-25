@@ -22,7 +22,7 @@ class KonyvPublicView{
 
 KattintasTrigger(){
     console.log("kosárban a triggerbol");
-    const esemeny = new CustomEvent("kosarba", {detail:this.#elem.id})
+    const esemeny = new CustomEvent("kosarba", {detail:this.#elem})
     window.dispatchEvent(esemeny);
 };
 
